@@ -94,29 +94,6 @@ function doPost(e) {
   }
 }
 
-// function getStudentDetails(id) {
-//   var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1nxbHi8ytMTWSM2qNnMyFE1uKN914Hcb0_GjMHe7mesQ/edit#gid=784716598");
-//   var sourceSheet = ss.getSheetByName("Sheet5");
-//   var lr = sourceSheet.getLastRow();
-
-//   for (var i = 1; i <= lr; i++) {
-//     var vid = sourceSheet.getRange(i, 1).getValue();
-//     if (vid == id) {
-//       var data = [];
-//       for (var j = 1; j <= 7; j++) {
-//         data.push(sourceSheet.getRange(i, j).getValue());
-//       }
-//       var responseText = "Student Details: " + data.join(", ");
-//       return ContentService.createTextOutput(responseText).setMimeType(ContentService.MimeType.TEXT);
-//       //return ContentService.createTextOutput(data.join(",")).setMimeType(ContentService.MimeType.TEXT);
-//     }
-//   }
-
-//   return ContentService.createTextOutput("User not found.").setMimeType(ContentService.MimeType.TEXT);
-// }
-
-
-
 function updateInOrOutTime(id, action) {
   var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1nxbHi8ytMTWSM2qNnMyFE1uKN914Hcb0_GjMHe7mesQ/edit#gid=793173212");
   var sheet = ss.getSheetByName("Sheet6");
