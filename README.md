@@ -1,5 +1,6 @@
 # ginkgo-2.0
 
+##Motivation
 The current system of noting down students' outings/leave details in registers is inefficient and time-consuming.
 
 So we developed an application that digitalizes the process of monitoring the movement of students. 
@@ -14,3 +15,6 @@ Security will have access to a list of students who are currently on an outing o
 When the students come back, and the QR code is scanned, in time will be recorded automatically.
 
 In case of an emergency such as a fire or gas leak, security can send out an emergency alert through this app to all the students in real-time thereby enhancing their safety.
+
+##How to use
+Download the .apk file and open it on any android phone to run the app.
