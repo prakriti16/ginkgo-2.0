@@ -20,3 +20,6 @@ In case of an emergency such as a fire or gas leak, security can send out an eme
 ## How to use
 Download the .apk file and open it on any android phone to run the app.
 Then you can track the students movement in a spreadsheet online at- https://docs.google.com/spreadsheets/d/1nxbHi8ytMTWSM2qNnMyFE1uKN914Hcb0_GjMHe7mesQ/edit?usp=sharing
+
+## Source code
+Go to MIT app inventor and upload the .aia file 
