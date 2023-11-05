@@ -65,7 +65,7 @@ function getStudentDetails(id,action) {
   //return ContentService.createTextOutput("URL of the destination sheet: " + destinationSheet.getUrl()).setMimeType(ContentService.MimeType.TEXT);
   var lr = sourceSheet.getLastRow();
 
-  for (var i = 1; i < destinationSheet.getLastRow(); i++) {
+  for (var i = 1; i <= destinationSheet.getLastRow(); i++) {
     var values = destinationSheet.getRange(i, 4).getValue();
     val.push(values);
     if (values == id) {
@@ -115,6 +115,9 @@ function updateInOrOutTime(id, action) {
 
   return ContentService.createTextOutput("Id Not Found").setMimeType(ContentService.MimeType.TEXT);
 }
+
+
+
 
 
 
