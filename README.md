@@ -1,6 +1,5 @@
 # ginkgo-2.0
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
-![Static Badge](https://img.shields.io/badge/MIT)
 
 ## Motivation
 The current system of noting down students' outings/leave details in registers is inefficient and time-consuming.
