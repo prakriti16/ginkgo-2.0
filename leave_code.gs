@@ -79,6 +79,22 @@ function getStudentDetails(id,action) {
   return ContentService.createTextOutput("values are " + val.join(",")).setMimeType(ContentService.MimeType.TEXT);}
 }
 
+function doPost(e) {
+  // Handle POST requests here, if needed
+   if (e && e.parameter && e.parameter.id) {
+    var id = e.parameter.id;
+    var action = e.parameter.action;
+
+    if (action === "in"  || action === "out") {
+      return getStudentDetails(id,action);
+    } else {
+      return ContentService.createTextOutput("Invalid action parameter.").setMimeType(ContentService.MimeType.TEXT);
+    }
+  } else {
+    return ContentService.createTextOutput("Please provide an ID and action in the URL parameters.").setMimeType(ContentService.MimeType.TEXT);
+  }
+}
+
 // function getStudentDetails(id) {
 //   var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1nxbHi8ytMTWSM2qNnMyFE1uKN914Hcb0_GjMHe7mesQ/edit#gid=784716598");
 //   var sourceSheet = ss.getSheetByName("Sheet5");
@@ -123,5 +139,7 @@ function updateInOrOutTime(id, action) {
 
   return ContentService.createTextOutput("Id Not Found").setMimeType(ContentService.MimeType.TEXT);
 }
+
+
 
 
